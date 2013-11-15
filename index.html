@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.3.2.js"></script>
+		<script type="text/javascript" src="buecher.js"></script>
+		<link rel="stylesheet" href="werner.css" />
+		<link rel="stylesheet" href="jquery.mobile-1.3.2.css" />
+		<link rel="stylesheet" href="buecher.css" />
+	</head>
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header">
+				<h1>Titel</h1>
+			</div>
+			<div data-role="content">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<h2>Buch suchen</h2>
+						<div id="suchbox">
+							<label for="suchbegriff">Name des Buches oder ISBN:</label>
+							<input type="search" name="suchbegriff" id="suchbegriff" value="" />
+						</div>
+							<a data-role="button" id="suchbutton">Suchen</a>
+					</div>
+					<div class="ui-block-b">
+						<h2>Suchergebnisse</h2>
+						<div id="buchvorschau">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="search">Suchen</a></li>
+						<li><a href="#buecherliste" data-icon="grid">B&uuml;cherliste</a></li>
+						<li><a href="impressum.html" data-icon="info">Impressum</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="page" id="buecherliste" data-theme="f">
+			<div data-role="header">
+				<h1>Titel</h1>
+			</div>
+			<div data-role="content">
+				<ul data-role="listview" data-autodividers=true data-inset="true">
+					<li>
+						<img src="http://media.galuba.net/2011/09/jquery.png"/>
+						<h3>Ein Buchtitel A</h3>
+						<p>Beschreibung</p>
+						<span class="ui-li-count">3</span>
+						<span class="ui-li-aside">Autoren hier</span>
+					</li>
+					<li>
+						<h3>Der Buchtitel B</h3>
+						<p>Beschreibung</p>
+					</li>
+					<li>
+						<h3>Buchtitel C</h3>
+						<p>Beschreibung</p>
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed"  data-theme="f">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="search">Suchen</a></li>
+						<li><a href="#buecherliste" data-icon="grid">B&uuml;cherliste</a></li>
+						<li><a href="impressum.html" data-icon="info">Impressum</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
