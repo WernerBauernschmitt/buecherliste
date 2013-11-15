@@ -1,3 +1,15 @@
 #suchbox{
 	margin: 0 5px;
 }
+
+#suche-grid .ui-block-a{
+	padding: 0 2em;
+}
+
+.buch .beschreibung {
+	padding-left: 6em;
+}
+
+.buch .titel {
+	padding-left: 4.5em;
+}

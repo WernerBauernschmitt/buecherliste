@@ -13,7 +13,7 @@
 				<h1>Titel</h1>
 			</div>
 			<div data-role="content">
-				<div class="ui-grid-a">
+				<div class="ui-grid-a" id="suche-grid">
 					<div class="ui-block-a">
 						<h2>Buch suchen</h2>
 						<div id="suchbox">
@@ -24,8 +24,8 @@
 					</div>
 					<div class="ui-block-b">
 						<h2>Suchergebnisse</h2>
-						<div id="buchvorschau">
-						</div>
+						<ul id="buchvorschau" data-role="listview">
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -70,6 +70,16 @@
 						<li><a href="impressum.html" data-icon="info">Impressum</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div style="display: none;">
+			<div id="buchvorlage">
+				<span class="buch">
+					<img alt="Buchvorschaubild" title="Buchvorschaubild" class="bild ui-li-thumb" />
+					<h3 class="titel"></h3>
+					<p class="autoren ui-li-aside"></p>
+					<p class="beschreibung"></p>
+				</span>
 			</div>
 		</div>
 	</body>
